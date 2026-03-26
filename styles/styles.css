@@ -27,7 +27,7 @@
   --link-hover-color: var(--color-primary);
 
   /* fonts */
-  --body-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  --body-font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */

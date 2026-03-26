@@ -52,7 +52,7 @@
 .tabs ul li a.active {
   color: #1b2a4a;
   font-weight: 700;
-  border-bottom-color: #1b2a4a;
+  border-bottom-color: #0066cc;
 }
 
 @media (width >= 900px) {
