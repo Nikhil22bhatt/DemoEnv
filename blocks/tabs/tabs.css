@@ -5,10 +5,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin: 0;
   padding: 0;
-  position: sticky;
-  top: var(--nav-height);
-  z-index: 50;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .tabs-container .tabs-wrapper {
