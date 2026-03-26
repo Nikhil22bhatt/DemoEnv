@@ -1,14 +1,14 @@
 /* ─── Section wrapper ─────────────────────────────────────────────────────── */
 
 .tabs-container {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dde1e7;
+  background-color: #0a0e1a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin: 0;
   padding: 0;
   position: sticky;
   top: var(--nav-height);
   z-index: 50;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .tabs-container .tabs-wrapper {
@@ -52,7 +52,7 @@
   padding: 16px 24px;
   font-size: 14px;
   font-weight: 500;
-  color: #555e6e;
+  color: rgba(255, 255, 255, 0.55);
   text-decoration: none;
   white-space: nowrap;
   border-bottom: 3px solid transparent;
@@ -61,14 +61,14 @@
 }
 
 .tabs ul li a:hover {
-  color: #1b2a4a;
-  border-bottom-color: rgba(0, 102, 204, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(0, 102, 204, 0.4);
   text-decoration: none;
 }
 
 /* Active state */
 .tabs ul li a.active {
-  color: #1b2a4a;
+  color: #ffffff;
   font-weight: 700;
   border-bottom: 3px solid #0066cc;
 }

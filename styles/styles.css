@@ -20,10 +20,10 @@
   --color-light-gray: #f3f4f6;
 
   /* semantic aliases */
-  --background-color: var(--color-background);
-  --light-color: var(--color-light-gray);
+  --background-color: #0a0e1a;
+  --light-color: #111827;
   --dark-color: var(--color-primary);
-  --text-color: var(--color-text);
+  --text-color: #e5e7eb;
   --link-color: var(--color-accent);
   --link-hover-color: var(--color-primary);
 

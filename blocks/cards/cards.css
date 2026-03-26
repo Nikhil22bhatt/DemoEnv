@@ -1,7 +1,7 @@
 /* ─── Section wrapper ─────────────────────────────────────────────────────── */
 
 .cards-container {
-  background-color: #f3f4f6;
+  background-color: #0a0e1a;
   margin: 0;
   padding: 56px 0;
 }
@@ -16,7 +16,7 @@
 .cards-container h2 {
   font-size: 26px;
   font-weight: 700;
-  color: #1b2a4a;
+  color: #ffffff;
   margin: 0 0 28px;
 }
 
@@ -49,9 +49,9 @@
 .cards > ul > li {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #111827;
   border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.22s ease;
 }
@@ -106,7 +106,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 1.55;
-  color: #1b2a4a;
+  color: #f1f5f9;
   margin: 0 0 16px;
 }
 
