@@ -1,0 +1,66 @@
+.tabs-container .tabs-wrapper {
+  max-width: unset;
+  padding: 0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tabs nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.tabs ul {
+  display: flex;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  /* Hide scrollbar visually while keeping scroll behaviour */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tabs ul::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs ul li {
+  flex-shrink: 0;
+}
+
+.tabs ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: #333333;
+  font-size: var(--body-font-size-s);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  /* Pull border flush with the container border-bottom */
+  margin-bottom: -2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.tabs ul li a:hover {
+  color: #0066cc;
+  border-bottom-color: #0066cc;
+}
+
+.tabs ul li a.active {
+  color: #1b2a4a;
+  font-weight: 700;
+  border-bottom-color: #1b2a4a;
+}
+
+@media (width >= 900px) {
+  .tabs nav {
+    padding: 0 32px;
+  }
+
+  .tabs ul li a {
+    padding: 16px 24px;
+  }
+}
