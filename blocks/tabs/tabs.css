@@ -1,10 +1,14 @@
-/* ─── Section wrapper ────────────────────────────────────────────────────── */
+/* ─── Section wrapper ─────────────────────────────────────────────────────── */
 
 .tabs-container {
   background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #dde1e7;
   margin: 0;
   padding: 0;
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 50;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .tabs-container .tabs-wrapper {
@@ -12,7 +16,7 @@
   padding: 0;
 }
 
-/* ─── Nav inner ──────────────────────────────────────────────────────────── */
+/* ─── Nav inner ───────────────────────────────────────────────────────────── */
 
 .tabs nav {
   max-width: 1200px;
@@ -20,7 +24,7 @@
   padding: 0 24px;
 }
 
-/* ─── Tab list ───────────────────────────────────────────────────────────── */
+/* ─── Tab list ────────────────────────────────────────────────────────────── */
 
 .tabs ul {
   display: flex;
@@ -41,26 +45,25 @@
   flex-shrink: 0;
 }
 
-/* ─── Tab links ──────────────────────────────────────────────────────────── */
+/* ─── Tab links ───────────────────────────────────────────────────────────── */
 
 .tabs ul li a {
   display: inline-block;
-  padding: 18px 28px;
+  padding: 16px 24px;
   font-size: 14px;
-  font-weight: 400;
-  color: #888888;
+  font-weight: 500;
+  color: #555e6e;
   text-decoration: none;
   white-space: nowrap;
   border-bottom: 3px solid transparent;
-  /* Pull border flush with container border-bottom */
   margin-bottom: -1px;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .tabs ul li a:hover {
   color: #1b2a4a;
+  border-bottom-color: rgba(0, 102, 204, 0.3);
   text-decoration: none;
-  border-bottom-color: transparent;
 }
 
 /* Active state */
@@ -70,10 +73,15 @@
   border-bottom: 3px solid #0066cc;
 }
 
-/* ─── Desktop ────────────────────────────────────────────────────────────── */
+/* ─── Desktop ─────────────────────────────────────────────────────────────── */
 
 @media (width >= 900px) {
   .tabs nav {
     padding: 0 40px;
+  }
+
+  .tabs ul li a {
+    padding: 18px 28px;
+    font-size: 14px;
   }
 }

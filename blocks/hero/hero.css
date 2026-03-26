@@ -1,4 +1,4 @@
-/* ─── Section wrapper ────────────────────────────────────────────────────── */
+/* ─── Section wrapper ─────────────────────────────────────────────────────── */
 
 .hero-container .hero-wrapper {
   max-width: none;
@@ -6,15 +6,15 @@
   margin: 0;
 }
 
-/* ─── Hero block ─────────────────────────────────────────────────────────── */
+/* ─── Hero block ──────────────────────────────────────────────────────────── */
 
 .hero {
   position: relative;
-  height: 350px;
+  height: 380px;
   overflow: hidden;
 }
 
-/* Dark gradient overlay via pseudo-element */
+/* Dark gradient overlay */
 .hero::before {
   content: '';
   position: absolute;
@@ -22,19 +22,19 @@
   z-index: 1;
   background: linear-gradient(
     to right,
-    rgba(10, 20, 40, 0.95) 0%,
-    rgba(10, 20, 40, 0.7) 40%,
-    rgba(10, 20, 40, 0.2) 80%,
+    rgba(10, 20, 40, 0.92) 0%,
+    rgba(10, 20, 40, 0.65) 45%,
+    rgba(10, 20, 40, 0.15) 80%,
     transparent 100%
   );
 }
 
-/* Existing overlay div from JS — hidden, ::before handles it */
+/* Overlay div from JS — CSS ::before handles it */
 .hero .hero-overlay {
   display: none;
 }
 
-/* ─── Background image ───────────────────────────────────────────────────── */
+/* ─── Background image ────────────────────────────────────────────────────── */
 
 .hero .hero-background {
   position: absolute;
@@ -49,10 +49,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   display: block;
 }
 
-/* ─── Text content ───────────────────────────────────────────────────────── */
+/* ─── Text content ────────────────────────────────────────────────────────── */
 
 .hero .hero-content {
   position: absolute;
@@ -69,10 +70,10 @@
   box-sizing: border-box;
 }
 
-/* ─── Breadcrumb ─────────────────────────────────────────────────────────── */
+/* ─── Breadcrumb ──────────────────────────────────────────────────────────── */
 
 .hero .hero-breadcrumb {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .hero .hero-breadcrumb ol {
@@ -88,68 +89,71 @@
   display: flex;
   align-items: center;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
 }
 
 .hero .hero-breadcrumb li + li::before {
   content: '›';
   margin: 0 6px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .hero .hero-breadcrumb a {
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .hero .hero-breadcrumb a:hover {
   color: #ffffff;
-  text-decoration: none;
 }
 
 .hero .hero-breadcrumb li[aria-current='page'] {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.85);
 }
 
-/* ─── Heading ────────────────────────────────────────────────────────────── */
+/* ─── Heading ─────────────────────────────────────────────────────────────── */
 
 .hero .hero-content h1 {
-  margin: 0 0 12px;
-  font-size: 36px;
+  margin: 0 0 14px;
+  font-size: 34px;
   font-weight: 800;
   color: #ffffff;
-  line-height: 1.1;
-  max-width: 640px;
+  line-height: 1.15;
+  max-width: 600px;
+  letter-spacing: -0.3px;
 }
 
-/* ─── Subtitle ───────────────────────────────────────────────────────────── */
+/* ─── Subtitle ────────────────────────────────────────────────────────────── */
 
 .hero .hero-content p {
   margin: 0;
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.78);
   font-weight: 400;
-  line-height: 1.6;
-  max-width: 520px;
+  line-height: 1.65;
+  max-width: 500px;
 }
 
-/* ─── Desktop ────────────────────────────────────────────────────────────── */
+/* ─── Desktop ─────────────────────────────────────────────────────────────── */
 
 @media (width >= 900px) {
   .hero {
-    height: 500px;
+    height: 480px;
   }
 
   .hero .hero-content {
-    padding: 80px 140px;
+    padding: 80px 120px;
   }
 
   .hero .hero-content h1 {
-    font-size: 52px;
+    font-size: 48px;
+    max-width: 620px;
   }
 
   .hero .hero-content p {
     font-size: 16px;
+    max-width: 520px;
   }
 }
