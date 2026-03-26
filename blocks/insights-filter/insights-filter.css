@@ -1,0 +1,139 @@
+.insights-filter-container .insights-filter-wrapper {
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  background-color: #fafafa;
+  padding: 0;
+}
+
+.insights-filter {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Layout ─────────────────────────────────────────────────────────────── */
+
+.insights-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 0;
+}
+
+@media (width >= 600px) {
+  .insights-filter-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+}
+
+/* ─── Filter group ───────────────────────────────────────────────────────── */
+
+.insights-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.insights-filter-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.insights-filter-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px 36px 8px 12px;
+  font-size: 14px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  cursor: pointer;
+  /* chevron via background SVG */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  min-width: 160px;
+}
+
+.insights-filter-group select:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 1px;
+  border-color: #0066cc;
+}
+
+/* ─── Search group ───────────────────────────────────────────────────────── */
+
+.insights-search-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  overflow: hidden;
+  flex: 1;
+  max-width: 360px;
+}
+
+@media (width < 600px) {
+  .insights-search-group {
+    max-width: unset;
+  }
+}
+
+.insights-search-group input[type='search'] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333333;
+  background: transparent;
+  /* remove browser default search cancel button */
+  -webkit-appearance: none;
+}
+
+.insights-search-group input[type='search']::-webkit-search-cancel-button {
+  display: none;
+}
+
+.insights-search-group:focus-within {
+  outline: 2px solid #0066cc;
+  outline-offset: 1px;
+  border-color: #0066cc;
+}
+
+.insights-search-group button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 100%;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid #e8e8e8;
+  border-radius: 0;
+  margin: 0;
+  color: #666666;
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.insights-search-group button:hover,
+.insights-search-group button:focus {
+  color: #0066cc;
+  background-color: #f0f6ff;
+}
+
+@media (width >= 900px) {
+  .insights-filter {
+    padding: 0 32px;
+  }
+}

@@ -5,7 +5,7 @@
 
 .hero {
   position: relative;
-  min-height: 480px;
+  min-height: 360px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -25,47 +25,98 @@
   display: block;
 }
 
-/* Dark overlay */
+/* Strong left-to-right dark gradient overlay */
 .hero .hero-overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(to right, rgba(27, 42, 74, 0.85) 0%, rgba(27, 42, 74, 0.5) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(27, 42, 74, 0.92) 0%,
+    rgba(27, 42, 74, 0.75) 45%,
+    rgba(27, 42, 74, 0.25) 100%
+  );
 }
 
-/* Text content */
+/* Content wrapper */
 .hero .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 60px 24px;
+  padding: 40px 24px;
   color: #ffffff;
 }
 
+/* Breadcrumb */
+.hero .hero-breadcrumb {
+  margin-bottom: 20px;
+}
+
+.hero .hero-breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero .hero-breadcrumb li {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero .hero-breadcrumb li + li::before {
+  content: '›';
+  margin: 0 6px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hero .hero-breadcrumb a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.hero .hero-breadcrumb a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.hero .hero-breadcrumb li[aria-current='page'] {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Heading */
 .hero .hero-content h1 {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: #ffffff;
   font-size: var(--heading-font-size-xxl);
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.15;
 }
 
+/* Subtitle */
 .hero .hero-content p {
   margin-top: 0;
-  max-width: 600px;
-  font-size: var(--body-font-size-m);
-  color: rgba(255, 255, 255, 0.9);
+  max-width: 560px;
+  font-size: var(--body-font-size-s);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
+  font-weight: 300;
 }
 
 @media (width >= 900px) {
   .hero {
-    min-height: 560px;
+    min-height: 450px;
   }
 
   .hero .hero-content {
-    padding: 80px 32px;
+    padding: 60px 32px;
   }
 }
