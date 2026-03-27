@@ -1,19 +1,23 @@
 {
   "project": "Tata Elxsi DemoEnv",
+  "host": "main--demoenv--nikhil22bhatt.aem.live",
   "plugins": [
     {
-      "id": "assets",
+      "id": "asset-library",
       "title": "Assets",
-      "url": "https://experience.adobe.com/#/@adobe-demo-apac-132/aem/assets/files",
+      "environments": ["edit"],
+      "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html",
       "isPalette": true,
-      "paletteRect": "top: 50px; right: 5px; bottom: 0; width: 360px; height: calc(100% - 55px); border-radius: var(--hlx-sk-button-border-radius);"
+      "includePaths": ["**.docx**"],
+      "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
     },
     {
       "id": "generate-variations",
       "title": "Generate Variations",
-      "url": "https://experience.adobe.com/#/@adobe-demo-apac-132/aem/generate-variations",
-      "isPalette": true,
-      "paletteRect": "top: 50px; right: 5px; bottom: 0; width: 360px; height: calc(100% - 55px); border-radius: var(--hlx-sk-button-border-radius);"
+      "url": "https://experience.adobe.com/aem/generate-variations",
+      "passConfig": true,
+      "environments": ["preview", "live", "edit"],
+      "includePaths": ["**.docx**"]
     }
   ]
 }
