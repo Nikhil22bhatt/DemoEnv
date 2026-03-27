@@ -4,7 +4,6 @@
     {
       "id": "assets",
       "title": "Assets",
-      "environments": ["edit"],
       "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/asset-selectors.js",
       "isPalette": true,
       "paletteRect": "top: 50px; right: 5px; bottom: 0; width: 360px; height: calc(100% - 55px); border-radius: var(--hlx-sk-button-border-radius);"
@@ -12,7 +11,6 @@
     {
       "id": "generate-variations",
       "title": "Generate Variations",
-      "environments": ["edit"],
       "url": "https://new.express.adobe.com/tools/generate-variations",
       "isPalette": true,
       "paletteRect": "top: 50px; right: 5px; bottom: 0; width: 360px; height: calc(100% - 55px); border-radius: var(--hlx-sk-button-border-radius);"
