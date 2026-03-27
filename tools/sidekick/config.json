@@ -4,14 +4,14 @@
     {
       "id": "assets",
       "title": "Assets",
-      "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static/authoring/ui/index.html",
+      "url": "https://experience.adobe.com/#/@adobe-demo-apac-132/aem/assets/files",
       "isPalette": true,
       "paletteRect": "top: 50px; right: 5px; bottom: 0; width: 360px; height: calc(100% - 55px); border-radius: var(--hlx-sk-button-border-radius);"
     },
     {
       "id": "generate-variations",
       "title": "Generate Variations",
-      "url": "https://experience.adobe.com/solutions/GenStudio/static/aem-genstudio.html",
+      "url": "https://experience.adobe.com/#/@adobe-demo-apac-132/aem/generate-variations",
       "isPalette": true,
       "paletteRect": "top: 50px; right: 5px; bottom: 0; width: 360px; height: calc(100% - 55px); border-radius: var(--hlx-sk-button-border-radius);"
     }
